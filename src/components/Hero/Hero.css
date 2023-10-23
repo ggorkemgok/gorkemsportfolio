@@ -1,0 +1,34 @@
+.hero-container {
+    text-align: center;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0D0208;
+  }
+  
+  h1 {
+    font-size: 7rem;
+    margin-bottom: 10px;
+    color: #008F11;
+    font-family: 'VT323', monospace;
+  }
+  
+  p {
+    font-size: 2rem;
+    color: #008F11;
+    padding: 1rem;
+  }
+  
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }  
+}
+
+.type-animation-container {
+  height: 10%;
+  overflow: hidden; 
+}
