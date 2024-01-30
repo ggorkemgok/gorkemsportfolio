@@ -27,17 +27,32 @@ export const Navbar = () => {
             </a>
           </li>
           <li className="navItem">
-            <a href="#" className="navLink">
+            <Link
+              className="navLink"
+              activeClass="active"
+              to="about-section"
+              spy={true}
+              smooth={true}
+            >
               About
-            </a>
-          </li>
-          <li className="navItem">
-            <a href="#" className="navLink">
-              Skills
-            </a>
+            </Link>
           </li>
           <li className="navItem">
             <Link
+              className="navLink"
+              activeClass="active"
+              to="skills-section"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Skills
+            </Link>
+          </li>
+          <li className="navItem">
+            <Link
+              className="navLink"
               activeClass="active"
               to="portfolio-section"
               spy={true}

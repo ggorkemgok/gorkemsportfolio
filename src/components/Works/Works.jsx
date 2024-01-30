@@ -1,8 +1,14 @@
 // Works.js
 import React, { useEffect, useRef } from "react";
-import { motion, useViewportScroll, useInView, useAnimation } from "framer-motion";
+import {
+  motion,
+  useViewportScroll,
+  useInView,
+  useAnimation,
+} from "framer-motion";
 import lingoConnectImg from "../../assets/LingoConnect.jpg";
 import capitalCityGameImg from "../../assets/CapitalCityGame.jpg";
+import wgPutzListe from "../../assets/WG-Putzliste.jpg";
 import "./Works.css";
 import ImageContainer from "../ImageContainer/ImageContainer";
 
@@ -22,20 +28,40 @@ export const Works = () => {
 
   return (
     <section id="portfolio-section">
-    <div className="worksSection">
-      <div className="imageContainer" ref={ref}>
-        <ImageContainer src={lingoConnectImg} scrollYProgress={scrollYProgress} mainControls={mainControls} />
-        <div className="content">
-        <h1 className="imageTitle">NGO Organisation Landing Page</h1>
+      <div className="worksSection">
+        <div className="imageContainer" ref={ref}>
+          <ImageContainer
+            src={lingoConnectImg}
+            scrollYProgress={scrollYProgress}
+            mainControls={mainControls}
+          />
+          <div className="content">
+            <h1 className="imageTitle">NGO Organisation Landing Page</h1>
+          </div>
+        </div>
+        <div className="imageContainer">
+          <ImageContainer
+            src={capitalCityGameImg}
+            scrollYProgress={scrollYProgress}
+            mainControls={mainControls}
+          />
+          <div className="content">
+            <h1 className="imageTitle">Quiz Game on Capital Cities</h1>
+          </div>
+        </div>
+        <div className="imageContainer">
+          <ImageContainer
+            src={wgPutzListe}
+            scrollYProgress={scrollYProgress}
+            mainControls={mainControls}
+          />
+          <div className="content">
+            <h1 className="imageTitle">
+              A CRUD Operation App for Cleaning Routine
+            </h1>
+          </div>
         </div>
       </div>
-      <div className="imageContainer">
-        <ImageContainer src={capitalCityGameImg} scrollYProgress={scrollYProgress} mainControls={mainControls} />
-        <div className="content">
-        <h1 className="imageTitle">Quiz Game on Capital Cities</h1>
-        </div>
-      </div>
-    </div>
     </section>
   );
 };

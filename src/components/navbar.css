@@ -1,7 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'VT323', sans-serif;
 }
 
 html {
@@ -14,6 +14,7 @@ body {
 
 li {
     list-style: none;
+    font-size: larger;
 }
 
 a {
@@ -70,7 +71,7 @@ a {
         right: 0;
         width: 40%;
         height: 98vh;
-        background: rgb(0, 28, 73);
+        background: #003B00;
         flex-direction: column;
         transform: translateX(100%);
         transition: 0.5s ease-in;
@@ -79,7 +80,7 @@ a {
         justify-content: center;
         z-index: 5;
     }
-    /* Center li elements within the ul */
+    
     ul.navMenu.navActive li {
         padding-right: 3.5rem;
     }
@@ -111,12 +112,17 @@ a {
   }
 
   .nav img {
-    max-width: 50px;
-    height: auto;
+    height: 90%;
     border-radius: 50%;
     animation: rotateOnce 2s ease-out;
 }
 
 .navItem:hover {
     cursor: pointer;
+}
+
+.navLink{
+    font-weight: bolder;
+    font-size: larger;
+    text-shadow: 5px 1px 2px rgba(11,156,49,0.4);
 }
